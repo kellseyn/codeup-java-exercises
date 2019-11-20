@@ -23,14 +23,18 @@ public class HelloWorld {
 //            System.out.println(three);
 
 //        int x = 4;
+//        x += 5;
 //            System.out.println(x + 5);
 
 //        int x = 3;
 //        int y = 4;
+        // y *= x;
 //            System.out.println(y * x);
 
         int x = 10;
         int y = 2;
+        x /= y;
+        y -= x;
             System.out.println(x / y);
             System.out.println(y - x);
     }
