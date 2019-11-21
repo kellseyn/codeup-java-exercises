@@ -30,17 +30,16 @@ public class ConsoleExercises {
         String sentence = scanner.nextLine();
         System.out.printf("%s %n", sentence);
 
-        System.out.println("Please enter the length, width and height of the classroom");
-        Integer length = scanner.nextInt();
-        Integer width = scanner.nextInt();
-        Integer area = length * width;
+        System.out.println("Please enter the length and width of the classroom");
+        String lengthStr = scanner.nextLine();
+        float length = Float.parseFloat(lengthStr);
+        String widthStr = scanner.nextLine();
+        float width = Float.parseFloat(widthStr);
+        Float perimeter = (length + length + width + width);
+        Float area = length * width;
         scanner.nextLine();
+        System.out.printf("The perimeter of the classroom is %s %n", perimeter);
         System.out.printf("The area of the classroom is %s %n", area);
-
-        System.out.println("Now what's the height of the classroom?");
-        Integer height = scanner.nextInt();
-        Integer volume = area * height;
-        System.out.printf("The volume of the classroom is $s", volume);
 
 
 
