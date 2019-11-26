@@ -1,29 +1,34 @@
 import java.util.Scanner;
 
+
+
 public class MethodsExercises {
 
-
-    public static float addition(float a, float b) {
-        return a + b;
-    }
-
-    public static float subtraction(float a, float b) {
-        return a - b;
-    }
-
-    public static float multiplication(float a, float b) {
-        return a * b;
-    }
-
-    public static float division(float a, float b) {
-        return a / b;
-    }
-
-    public static float modulus(float a, float b) {
-        return a % b;
-    }
-
+//    static Scanner scanner = new Scanner(System.in);
+//
+//
+//    public static float addition(float a, float b) {
+//        return a + b;
+//    }
+//
+//    public static float subtraction(float a, float b) {
+//        return a - b;
+//    }
+//
+//    public static float multiplication(float a, float b) {
+//        return a * b;
+//    }
+//
+//    public static float division(float a, float b) {
+//        return a / b;
+//    }
+//
+//    public static float modulus(float a, float b) {
+//        return a % b;
+//    }
+//
 //    public static int getInteger(int min, int max) {
+////        int input = Integer.parseInt(scanner.nextLine());
 //        System.out.print("Enter a number between 1 and 10: ");
 //        Scanner scanner = new Scanner(System.in);
 //            int userInput = scanner.nextInt();
@@ -34,17 +39,25 @@ public class MethodsExercises {
 //                System.out.printf("%s is not a valid number%n", userInput);
 //            }
 //
+////            if (userInput < min){
+////                System.out.println("The number is invalid");
+////                getInteger(min, max);
+////            } else if (userInput > max){
+////                System.out.println("The number is invalid");
+////                getInteger(min, max);
+////            }
+//
 //
 //    return getInteger(1, 10);
 //
 //
 //    }
-
-
-
+//
+//
+//
 //    public static int factorial(int min, int max) {
 //        System.out.print("Enter a number between 1 and 10: ");
-//        Scanner scanner = new Scanner(System.in);
+////        Scanner scanner = new Scanner(System.in);
 //        int userInput = scanner.nextInt();
 //        if (userInput <= max & userInput >= min) {
 //            System.out.printf("Your number is %s%n", userInput);
@@ -67,12 +80,12 @@ public class MethodsExercises {
 //        return factorial(1, 10);
 //
 //    }
-
-
-
+//
+//
+//
 //    public static int diceGame(int sides) {
 //        System.out.print("How many sides do each of your dice have? ");
-//        Scanner scanner = new Scanner(System.in);
+////        Scanner scanner = new Scanner(System.in);
 //        int userInput = scanner.nextInt();
 //        System.out.printf("So you want to roll 2 %d -sided die? Type Roll ", userInput);
 //            String roll =scanner.next();
@@ -91,6 +104,7 @@ public class MethodsExercises {
             int theNumber = (int) (Math.random() * (100 - 1 * 1)) + 1;
             Scanner scanner = new Scanner(System.in);
             System.out.print("Guess the number 1 - 100 ");
+            System.out.printf("The winning number is %d",theNumber);
             int userNum = scanner.nextInt();
 
             if (userNum > theNumber){
@@ -107,11 +121,11 @@ public class MethodsExercises {
         }
 
     public static void main(String[] args) {
-        System.out.println(addition(2,4));
-        System.out.println(subtraction(2,4));
-        System.out.println(multiplication(2,4));
-        System.out.println(division(2,4));
-        System.out.println(modulus(2,4));
+//        System.out.println(addition(2,4));
+//        System.out.println(subtraction(2,4));
+//        System.out.println(multiplication(2,4));
+//        System.out.println(division(2,4));
+//        System.out.println(modulus(2,4));
 //        System.out.println(getInteger(1, 10));
 //        System.out.println(factorial(1,20));
 //        System.out.println(diceGame(6));
