@@ -1,12 +1,17 @@
 package shapes;
 
-import java.util.Scanner;
-
 public class Circle {
-    Scanner scanner = new Scanner(System.in);
-    double input = scanner.nextInt();
-    private double radius = input;
-    public Circle(double radius)
-    public double getArea()
-    public double getCircumference()
+    private double radius;
+
+    public double getArea() {
+        return  3.14 * (radius * radius);
+    }
+    public double getCircumference() {
+        return 2 * 3.14 * radius;
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
 }
