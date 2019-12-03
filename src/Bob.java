@@ -1,7 +1,14 @@
+import polylec.Password;
+
 import java.util.Scanner;
 
 public class Bob {
+
+    Password password = new Password("pass");
+
     public static void main(String[] args) {
+
+        Password.checkPass("0pass1");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you have a question for Bob?");
         String input = scanner.next();
