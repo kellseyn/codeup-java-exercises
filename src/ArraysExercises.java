@@ -8,7 +8,7 @@ public class ArraysExercises {
 
 
 
-        String[] Persons = {"Kellsey", "Zackry", "Pocky"};
+        String[] Persons = {"CodeupStudent", "Zackry", "Pocky"};
         for (String Person : Persons){
             System.out.println(Person);
         }

@@ -43,7 +43,7 @@ public class ConsoleExercises {
 
 
 
-//        String name = "Kellsey";
+//        String name = "CodeupStudent";
 //        int favNum = 16;
 //        System.out.println("Hello, " + name + "\n");
 //        System.out.printf("Hello %s, how ya doing?\n", name);
