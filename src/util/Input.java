@@ -40,18 +40,17 @@ public class Input {
 
         public int getInt(){
             int theNum;
-            while(true) {
-                try {
-                    String number = scanner.next();
-                    theNum = Integer.valueOf(number);
-                    break;
 
-                } catch (NumberFormatException e) {
-                    System.out.println("Please input a integer.");
+                try {
+                    theNum = Integer.valueOf(getString());
+                    return theNum;
+
+                } catch (NumberFormatException nfe) {
+                    System.out.println("Please input an integer.");
+                    return getInt();
                 }
 
-            }
-            return theNum;
+
         }
 
 
@@ -59,29 +58,29 @@ public class Input {
         public double getDouble(double min, double max){
             System.out.println("Gimme numbah naow");
             double pickNumber = scanner.nextInt();
-            while(true){
+
                 if (pickNumber < max && pickNumber > min){
                     System.out.println("That's close!");
                     return pickNumber;
                 } else {
                     System.out.println("Pick a new one");
-                    pickNumber = scanner.nextInt();
+                    return getDouble(min, max);
                 }
-            }
         }
 
 
         public double getDouble(){
+            System.out.println("Give me a decimal");
             double truenum;
-            while (true)
+
                 try {
-                    String number = scanner.next();
-                    truenum = Double.valueOf(number);
-                    break;
+                    truenum = Double.valueOf(getString());
+                    return  truenum;
                 } catch (NumberFormatException e) {
                     System.out.println("Please input a number.");
+
+                    return getDouble();
                 }
-            return truenum;
         }
 
 }
