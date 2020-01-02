@@ -35,36 +35,38 @@ public class Santa {
         Scanner sc = new Scanner(System.in);
 
 
-
-        Scanner scanner=new Scanner(System.in);
         while (true) {
-            System.out.println("Keep going?");
-            String question = scanner.nextLine();
-            if(question.equalsIgnoreCase("no") || question.equalsIgnoreCase("n")){
-                break;
-            }
-                System.out.println("HO HO HO, What would you like for Christmas?");
+
+            System.out.println("HO HO HO, What would you like for Christmas?");
+
+
                 String input = sc.nextLine();
                 if (input.equalsIgnoreCase("")){
                     System.out.println("It's ok, you can tell me what you want for Christmas\n");
                 } else{
                     System.out.printf("Ahh! so you want a %s for Christmas, I'll put it on the list%n", input);
+                    wishlist.add(input);
+                    System.out.println(wishlist);
+                    System.out.println("Do you want anything else to add?");
                 }
 
-//                for (Integer i = 0; i < reindeerteam.length; i++) {
-//                    System.out.println(reindeerteam[i].name);
-//
-//
-//                }
-//                addReindeer[9] = new Reindeer("Olive");
-//
-//                for (Integer i = 0; i < addReindeer.length; i++) {
-//                    System.out.println(addReindeer[i].name);
-//
-//
-//                }
-                wishlist.add(input);
-                System.out.println(wishlist);
+                for (Integer i = 0; i < reindeerteam.length; i++) {
+                    System.out.println(reindeerteam[i].name);
+
+
+                }
+                addReindeer[9] = new Reindeer("Olive");
+
+                for (Integer i = 0; i < addReindeer.length; i++) {
+                    System.out.println(addReindeer[i].name);
+
+
+                }
+
+            String question = sc.nextLine();
+            if(question.equalsIgnoreCase("no") || question.equalsIgnoreCase("n")) {
+                break;
+            }
         }
 
 
