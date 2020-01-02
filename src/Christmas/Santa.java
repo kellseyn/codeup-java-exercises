@@ -2,10 +2,12 @@ package Christmas;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class Santa {
+
 
     public static Reindeer[] reindeerteam;
     static {
@@ -23,6 +25,8 @@ public class Santa {
 
     }
 
+    public static Reindeer[] addReindeer = Arrays.copyOf(reindeerteam, 10);
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("HO HO HO, What would you like for Christmas?");
@@ -35,7 +39,17 @@ public class Santa {
 
         for (Integer i = 0; i < reindeerteam.length; i++) {
             System.out.println(reindeerteam[i].name);
+
+
         }
+        addReindeer[9] = new Reindeer("Olive");
+
+        for (Integer i = 0; i < addReindeer.length; i++) {
+            System.out.println(addReindeer[i].name);
+
+
+        }
+
 
 
 
